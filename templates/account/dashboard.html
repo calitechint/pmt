@@ -40,8 +40,8 @@
                                 </div>
                                 <div class="bottom-area">
                                     <div class="left-side">
-                                        <a href="{% url "main_app:search-acct" %}" class="cmn-btn">Transfer Money</a>
-                                        <a href="{% url "main_app:deposit-money" account.account_number %}" class="cmn-btn">Deposit Money</a>
+                                        <a href="" class="cmn-btn" data-bs-toggle="modal" data-bs-target="#displayInf">Transfer Money</a>
+                                        <a href="" class="cmn-btn" data-bs-toggle="modal" data-bs-target="#displayInf">Withdraw Money</a>
                                         {% comment %} <a href="withdraw-money-step-1.html" class="cmn-btn">Withdraw</a> {% endcomment %}
                                     </div>
                                     {% comment %} <div class="right-side">
@@ -677,6 +677,29 @@
         </div>
     </div>
     <!-- Add Card Popup start -->
+    <!-- Add Card Popup start -->
+    <div class="add-card">
+        <div class="container-fluid">
+            
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="modal fade" id="#displayInf" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header justify-content-between">
+                                    <h6>You cannot Withdraw</h6>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Add Card Popup start -->
+
 
     <!-- Transactions Popup start -->
     {% comment %} <div class="transactions-popup">
